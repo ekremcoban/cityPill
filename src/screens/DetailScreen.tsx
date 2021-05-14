@@ -33,8 +33,6 @@ function DetailScreen() {
 const styles = StyleSheet.create({
   frame: {
     flex: 1,
-    // alignItems: 'center',
-    // justifyContent: 'center',
   },
 });
 

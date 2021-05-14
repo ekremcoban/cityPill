@@ -14,6 +14,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './src/screens/HomeScreen';
 import DetailScreen from './src/screens/DetailScreen';
 import AdviceScreen from './src/screens/AdviceScreen';
+import AdvicePlacesScreen from './src/screens/AdvicePlacesScreen';
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,7 @@ function App() {
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Detail" component={DetailScreen} />
          <Stack.Screen name="TAVSİYELER" component={AdviceScreen} />
+         <Stack.Screen name="NERELERİ GÖRMELİ" component={AdvicePlacesScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
