@@ -1,14 +1,13 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet} from 'react-native';
-import { useRoute } from '@react-navigation/native';
+import {View, Text, Image, StyleSheet} from 'react-native';
+import {useRoute} from '@react-navigation/native';
 
-function DetailsScreen() {
+function CityListScreen() {
   const route = useRoute();
-  const { title, img } = route.params;
+  const {title, img} = route.params;
 
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Details Screen</Text>
+    <View style={styles.frame}>
       <Image style={styles.pic} source={img} />
       <Text>{title}</Text>
     </View>
@@ -16,6 +15,11 @@ function DetailsScreen() {
 }
 
 const styles = StyleSheet.create({
+  frame: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
   pic: {
     width: '80%',
     height: 300,
@@ -23,4 +27,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default DetailsScreen;
+export default CityListScreen;

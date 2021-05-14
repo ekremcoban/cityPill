@@ -12,6 +12,7 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from './src/screens/HomeScreen';
+import DetailScreen from './src/screens/DetailScreen';
 import CityListScreen from './src/screens/CityListScreen';
 
 const Stack = createStackNavigator();
@@ -21,6 +22,7 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Detail" component={DetailScreen} />
          <Stack.Screen name="CityList" component={CityListScreen} />
       </Stack.Navigator>
     </NavigationContainer>

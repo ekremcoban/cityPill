@@ -13,7 +13,7 @@ function Cards(props: Props) {
   const navigation = useNavigation();
 
   return (
-    <TouchableOpacity onPress={() => navigation.navigate('CityList', props)}>
+    <TouchableOpacity onPress={() => navigation.navigate('Detail', props)}>
       <View style={styles.container}>
         <View style={styles.leftContainer}>
           <Image style={styles.pic} source={img} />
