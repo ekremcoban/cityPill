@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
 import {useRoute} from '@react-navigation/native';
-import AdviceCard from '../component/AdviceCard';
+import AdviceCard from '../components/AdviceCard';
 import {ScrollView} from 'react-native-gesture-handler';
 
 const data = [

@@ -14,7 +14,7 @@ const html_script = `
 <body style="padding: 0; margin: 0">
 <div id="mapid" style="width: 100%; height: 100vh;"></div>
 <script>
-let mymap = L.map('mapid').setView([51.505, -0.09], 7);
+let mymap = L.map('mapid').setView([41.008364384219284, 28.979799488583907], 7);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'

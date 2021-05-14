@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import CityCards from '../component/CityCards';
+import CityCards from '../components/CityCards';
 import {ScrollView} from 'react-native-gesture-handler';
 
 const data = [

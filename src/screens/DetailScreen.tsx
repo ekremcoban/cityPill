@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
 import {useRoute} from '@react-navigation/native';
-import Selection from '../component/Selection';
+import Selection from '../components/Selection';
 
 const data = [
   {
