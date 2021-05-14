@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
-import Cards from '../component/Cards';
+import CityCards from '../component/CityCards';
 import {ScrollView} from 'react-native-gesture-handler';
 
 const data = [
@@ -37,7 +37,7 @@ const data = [
   },
 ];
 
-const cards = data.map(c => <Cards key={c.id} {...c} />);
+const cards = data.map(c => <CityCards key={c.id} {...c} />);
 
 function HomeScreen() {
   const navigation = useNavigation();

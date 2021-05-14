@@ -8,12 +8,12 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-function Cards(props: Props) {
+function AdviceCards(props: Props) {
   const {title, img} = props;
   const navigation = useNavigation();
 
   return (
-    <TouchableOpacity onPress={() => navigation.navigate('Detail', props)}>
+    <TouchableOpacity onPress={() => navigation.navigate(title, props)}>
       <View style={styles.container}>
         <View style={styles.leftContainer}>
           <Image style={styles.pic} source={img} />
@@ -46,7 +46,6 @@ const styles = StyleSheet.create({
     width: 120,
     height: 120,
     resizeMode: 'cover',
-    borderRadius: 60,
   },
   righttContainer: {
     flex: 2,
@@ -64,4 +63,4 @@ type Props = {
   img: any;
 };
 
-export default Cards;
+export default AdviceCards;

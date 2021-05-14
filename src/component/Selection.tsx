@@ -9,7 +9,7 @@ function Selection(props: Props) {
   return (
     <TouchableOpacity
       style={{width: '100%', height: '33%'}}
-      onPress={() => navigation.navigate('Detail', props)}>
+      onPress={() => navigation.navigate(title, props)}>
       <View style={styles.container}>
         <Image style={styles.pic} source={img} />
         <Text style={styles.title}>{title}</Text>
