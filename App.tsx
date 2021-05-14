@@ -15,6 +15,9 @@ import HomeScreen from './src/screens/HomeScreen';
 import DetailScreen from './src/screens/DetailScreen';
 import AdviceScreen from './src/screens/AdviceScreen';
 import AdvicePlacesScreen from './src/screens/AdvicePlacesScreen';
+import AdviceWhatToEatScreen from './src/screens/AdviceWhatToEatScreen';
+import AdviceWhereToEatScreen from './src/screens/AdviceWhereToEatScreen';
+import AdviceWhereToFunScreen from './src/screens/AdviceWhereToFunScreen';
 
 const Stack = createStackNavigator();
 
@@ -26,6 +29,9 @@ function App() {
         <Stack.Screen name="Detail" component={DetailScreen} />
          <Stack.Screen name="TAVSİYELER" component={AdviceScreen} />
          <Stack.Screen name="NERELERİ GÖRMELİ" component={AdvicePlacesScreen} />
+         <Stack.Screen name="NE YEMELİ" component={AdviceWhatToEatScreen} />
+         <Stack.Screen name="NEREDE YEMELİ" component={AdviceWhereToEatScreen} />
+         <Stack.Screen name="EĞLENCE NEREDE" component={AdviceWhereToFunScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
