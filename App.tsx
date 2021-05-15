@@ -18,6 +18,7 @@ import AdvicePlacesScreen from './src/screens/AdvicePlacesScreen';
 import AdviceWhatToEatScreen from './src/screens/AdviceWhatToEatScreen';
 import AdviceWhereToEatScreen from './src/screens/AdviceWhereToEatScreen';
 import AdviceWhereToFunScreen from './src/screens/AdviceWhereToFunScreen';
+import NotesScreen from './src/screens/NotesScreen';
 
 const Stack = createStackNavigator();
 
@@ -32,6 +33,7 @@ function App() {
          <Stack.Screen name="NE YEMELİ" component={AdviceWhatToEatScreen} />
          <Stack.Screen name="NEREDE YEMELİ" component={AdviceWhereToEatScreen} />
          <Stack.Screen name="EĞLENCE NEREDE" component={AdviceWhereToFunScreen} />
+         <Stack.Screen name="NOTLARIM" component={NotesScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
