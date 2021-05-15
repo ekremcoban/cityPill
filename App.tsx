@@ -19,6 +19,9 @@ import AdviceWhatToEatScreen from './src/screens/AdviceWhatToEatScreen';
 import AdviceWhereToEatScreen from './src/screens/AdviceWhereToEatScreen';
 import AdviceWhereToFunScreen from './src/screens/AdviceWhereToFunScreen';
 import NotesScreen from './src/screens/NotesScreen';
+import GoToCityCenterScreen from './src/screens/GoToCityCenterScreen';
+import FromAirportScreen from './src/screens/FromAirportScreen';
+import FromTrainStationScreen from './src/screens/FromTrainStationScreen';
 
 const Stack = createStackNavigator();
 
@@ -34,6 +37,9 @@ function App() {
          <Stack.Screen name="NEREDE YEMELİ" component={AdviceWhereToEatScreen} />
          <Stack.Screen name="EĞLENCE NEREDE" component={AdviceWhereToFunScreen} />
          <Stack.Screen name="NOTLARIM" component={NotesScreen} />
+         <Stack.Screen name="ŞEHİR MERKEZİNE GİDİŞ" component={GoToCityCenterScreen} />
+         <Stack.Screen name="HAVALİMANINDAN" component={FromAirportScreen} />
+         <Stack.Screen name="TREN İSTASYONUNDAN" component={FromTrainStationScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
